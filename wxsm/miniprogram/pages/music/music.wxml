@@ -1,0 +1,30 @@
+<!-- music component -->
+<!-- 播放列表 -->
+<view>
+  <view class='bgpic'>
+    <image src='{{musicList[idx].song.album.picUrl}}'></image> 
+  </view>
+  <view style='margin-top:-90px;'>
+    <view class='mtitle'>每日推荐</view>
+    <view class='mclist'  wx:for="{{musicList}}" wx:key="index" data-idx="{{index}}" catchtap='playmc'>
+      <view class='sgpic'>
+        <image src='{{item.song.album.picUrl}}'></image>
+      </view>
+      <view class='sgmsg'>
+        <view class='sgname'>{{item.name}}</view>
+        <view class='mcname'>{{item.song.album.artists[0].name}}</view>
+      </view>
+      <view class='player'>
+        <image src='../../images/play5.png'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 播放控件 -->
+<view class='mp3play'>
+  <audio class='mp' src='https://v1.itooi.cn/netease/url?id={{musicList[idx].id}}&quality=flac' poster='{{musicList[idx].song.album.picUrl}}' name='{{musicList[idx].name}}' author='{{musicList[idx].song.album.artists[0].name}}' controls='true'></audio>
+  <view class='zz'></view>
+  <image class='pic' src='{{musicList[idx].song.artists[0].picUrl}}'></image>  
+</view>
+
+

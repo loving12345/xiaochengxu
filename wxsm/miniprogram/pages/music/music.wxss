@@ -1,0 +1,65 @@
+.mp3play{
+  width: 100%;
+  height: 40px;
+  border:1px solid #999;
+  box-shadow:5px 5px 5px 0px #333;
+  position: fixed;
+  top:88%;
+  z-index: 10;
+}
+.mp{
+  width: 100%;
+}
+.pic{
+  position: absolute;
+  left: 81%;
+  top:0;
+  width:70px;
+  height:70px;
+}
+.zz{
+  position: absolute;
+  left: 81%;
+  top:0;
+  width:70px;
+  height:70px;
+  z-index: 11;
+  background: rgba(0, 0, 0, .5)
+}
+.bgpic{
+  width:100%;
+  height: 600rpx;
+}
+.bgpic image{
+  width: 100%;
+  height: 600rpx;
+  transform: translateY(-30%)
+}
+.mclist{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+}
+.sgpic>image{
+  width: 50px;
+  height: 50px;
+  border-radius: 20rpx;
+}
+.player>image{
+  width: 30px;
+  height: 30px;
+}
+.sgmsg{
+  width: 60%;
+}
+.mcname{
+  font-size: 24rpx;
+  color:#999;
+}
+.mtitle{
+  font-size: 36rpx;
+  color:orangered;
+  padding:20rpx;
+}

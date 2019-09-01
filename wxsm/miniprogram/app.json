@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/music/music",
+    "pages/books/books",
+    "pages/bookDetail/bookDetail"
+  ],
+  "window": {
+    "backgroundColor": "green",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "娱乐APP",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/home/home",
+        "text":"短视频",
+        "iconPath":"images/video3.png",
+        "selectedIconPath":"images/video4.png"
+      },
+      {
+        "pagePath": "pages/music/music",
+        "text": "音乐",
+        "iconPath": "images/music1.png",
+        "selectedIconPath": "images/music2.png"
+      },
+      {
+        "pagePath": "pages/books/books",
+        "text": "小说",
+        "iconPath": "images/book1.png",
+        "selectedIconPath": "images/book2.png"
+      }
+    ]
+  }
+}

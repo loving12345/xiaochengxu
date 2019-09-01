@@ -1,0 +1,29 @@
+<!--pages/books/books.wxml-->
+<wxs src="../../wxs/sub2.wxs" module="tools" />
+<view class='booksbody'>
+  <view class='header'>
+    <text class='bktitle'>每日精选</text>
+    <view>
+      <van-button size="small" catchtap='changeb' plain hairline type="primary" round="true">换一批</van-button>
+    </view>
+  </view>
+  <view class='booksList'>
+    <view class='bks' wx:for="{{books}}" wx:key="index" data-name="{{item.bookname}}" catchtap='goOut'>
+      <view>
+        <image src='{{item.book_cover}}'></image>
+      </view>
+      <view class='bkDetail'>
+        <view class='bkname'>
+        {{item.bookname}}
+        </view>
+        <view class='bktext'>
+          <text>{{tools.sub2(item.book_info)}}</text>
+        </view>
+        <view class='bkau'>
+          <text class='bauname'>{{item.author_name}}</text>
+          <view class='bclass'>{{item.class_name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

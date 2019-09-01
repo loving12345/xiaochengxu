@@ -1,0 +1,44 @@
+/* pages/home/home.wxss */
+.body{
+  margin-bottom: 25rpx; 
+}
+.parent video{
+  width: 100%; 
+}
+.parent{
+  position: relative;
+}
+.aut{
+  display: flex;
+}
+.stit{
+  padding:17rpx;
+  color: #666666;
+  font-size: 32rpx;
+}
+.author{
+  padding:5rpx 20rpx;
+  background: #ff0;
+  border-radius: 20px;
+  color:#333;
+  font-size: 14px;
+  line-height: 25px;
+}
+.time{
+  padding:5rpx 15rpx;
+  background: #666666;
+  border-radius:20rpx;
+  color:#fff;
+  font-size: 14px;
+  line-height: 25px;
+  margin-left: 10px;
+}
+.hot{
+  padding:5rpx 15rpx;
+  background: #f00;
+  border-radius:20rpx;
+  color:#000;
+  font-size: 14px;
+  line-height: 25px;
+  margin-left: 10px;
+}

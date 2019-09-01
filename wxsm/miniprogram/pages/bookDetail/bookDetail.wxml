@@ -1,0 +1,54 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<wxs src="../../wxs/sub2.wxs" module="tools" />
+<view>
+  <view>
+    <view class="bg">
+      <view class='bgpic'> 
+        <image src='{{aladdin.cover}}'></image>
+      </view>
+      <view class='bcontent'>
+        <view class='bkpic'>
+          <image src='{{aladdin.cover}}'></image>
+        </view>
+        <view class='detail'>
+          <view class='btil'>{{aladdin.title}}</view>
+          <view class='bac'>
+            <text class='bdta'>{{aladdin.author}}</text>
+            | {{aladdin.category}}
+          </view>
+          <view class='btotal'>{{info.total}}万字</view>
+        </view>
+      </view>
+    </view>
+    <view class='jj'>
+        简介
+        <view>
+           <text class='bqs' wx:for="{{tages}}" wx:key="index">{{item}}</text>
+        </view>
+        <view class='jjnr'>{{aladdin.desc}}</view>
+    </view>
+    <view class='fgx'></view>
+    <text class='bktitle'>更多精选</text>
+    <view>
+       <view class='booksList'>
+        <view class='bks' wx:for="{{data}}" wx:key="index" data-name="{{item.title}}" catchtap='goOut' >
+          <view>
+            <image src='{{item.cover}}'></image>
+          </view>
+          <view class='bkDetail'>
+            <view class='bkname'>
+            {{item.title}}
+            </view>
+            <view class='bktext'>
+              <text>{{tools.sub2(item.desc)}}</text>
+            </view>
+            <view class='bkau'>
+              <text class='bauname'>{{item.author}}</text>
+              <view class='bclass'>{{item.category}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

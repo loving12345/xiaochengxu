@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<wxs src="../../wxs/slice.wxs" module="tools" />
+<wxs src="../../wxs/sub.wxs" module="tols" />
+<view class='body' wx:for="{{list}}" wx:key="index">
+  <view >
+    <view class='stit'>{{tols.sub(item.text)}}</view>
+  </view>
+  <view class='parent' >
+    <video id='myvideo{{index}}' custom-cache='{{false}}'  poster='{{item.thumbnail}}' src='{{item.video}}'
+    title="{{item.text}}"></video>
+    <view class='aut'>
+      <view class='author'>up主:{{item.name}}</view>
+      <view class='time'>时间:{{tools.spa(item.passtime)}}</view>
+      <view class='hot'>热度:{{item.up}}</view>
+    </view>
+  </view> 
+</view>

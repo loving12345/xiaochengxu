@@ -1,0 +1,125 @@
+/* pages/bookDetail/bookDetail.wxss */
+.bg{
+  position: relative;
+  width: 100%;
+  height: 400rpx;
+}
+.bgpic{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  opacity: .7;
+  filter: blur(20rpx);
+  height: 400rpx;
+  z-index: 1;
+}
+.bgpic image{
+  width: 100%;
+  height: 400rpx;
+}
+.bcontent{
+  position: absolute;
+  z-index: 2;
+  top:0;
+  left: 0;
+  height: 400rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+.bkpic{
+  margin-left: 40rpx;
+}
+.bkpic image{
+  width: 200rpx;
+  height: 280rpx;
+}
+.detail{
+  margin-left:40rpx;
+}
+.btil{
+  font-size:36rpx;
+}
+.bac{
+  color:#333;
+  font-size:30rpx; 
+}
+.bdta{
+  color:orangered
+}
+.btotal{
+ color:#333;
+  font-size:26rpx;
+}
+.bac{
+  margin:20rpx 0; 
+}
+.jj{
+  color:orangered;
+  margin-top:40rpx ;
+  padding:10rpx 40rpx;
+}
+.bqs{
+  background:rgb(233, 227, 227);
+  color:#000;
+  font-size:28rpx;
+  border-radius: 15rpx;
+  margin: 10rpx;
+  padding:0 10rpx;
+}
+.jjnr{
+  color:#333;
+  font-size:28rpx;
+}
+.fgx{
+  margin-top:40rpx;
+  width: 100%;
+  height:20rpx;
+  background:rgb(224, 219, 219);
+}
+.bktitle{
+  padding: 30rpx;
+  font-size: 36rpx;
+  color:orangered;
+}
+.bks{
+  border-bottom:1px solid #333;
+  margin-bottom:20rpx;
+} 
+.bks image{
+  width: 200rpx;
+  height: 240rpx;
+}
+.bks{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin:20rpx;
+  padding-bottom:20rpx;
+}
+.bkname{
+  margin: 0 20rpx  0;
+  font-size:36rpx;
+  color: #333;
+}
+.bktext{
+  padding:10px;
+  font-size: 28rpx;
+  color:#999;
+}
+.bkau{
+  display: flex;
+  justify-content: space-between;
+  padding:0 45rpx 0 20rpx ;
+}
+.bauname,.bclass{
+  font-size: 28rpx;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding:0 40rpx 0 0;
+  align-items: center;
+}

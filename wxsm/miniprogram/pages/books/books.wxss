@@ -1,0 +1,48 @@
+/* pages/books/books.wxss */
+.booksbody{
+  background: #f1f1f1;
+}
+.bktitle{
+  padding: 30rpx;
+  font-size: 36rpx;
+  color:orangered;
+}
+.bks{
+  border-bottom:1px solid #333;
+  margin-bottom:20rpx;
+} 
+.bks image{
+  width: 200rpx;
+  height: 240rpx;
+}
+.bks{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin:20rpx;
+  padding-bottom:20rpx;
+}
+.bkname{
+  margin: 0 20rpx  0;
+  font-size:36rpx;
+  color: #333;
+}
+.bktext{
+  padding:10px;
+  font-size: 28rpx;
+  color:#999;
+}
+.bkau{
+  display: flex;
+  justify-content: space-between;
+  padding:0 45rpx 0 20rpx ;
+}
+.bauname,.bclass{
+  font-size: 28rpx;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding:0 40rpx 0 0;
+  align-items: center;
+}
